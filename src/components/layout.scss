@@ -5,9 +5,7 @@
 }
 
 html {
-    
     background-color: #1E1E1E;
-
   }
 
 #site-search {
@@ -32,7 +30,7 @@ html {
     line-height: 25px;
     /* or 103% */
     letter-spacing: 0.07em;
-    
+
     color: #FFFFFF;
 }
 
@@ -100,7 +98,7 @@ html {
 
     color: #FFFFFF;
 }
-    
+
 .registration-background {
 
     position: absolute;
@@ -108,7 +106,7 @@ html {
     height: 55px;
     left: 1474px;
     top: 62px;
-    
+
     background: #3E3159;
     border-radius: 110px;
 
@@ -121,6 +119,8 @@ html {
     height: 171px;
     left: 0px;
     top: 0px;
+
+    z-index: -1000;
 
     background: rgba(165, 165, 165, 0.24);
 
@@ -196,7 +196,7 @@ html {
     height: 42px;
     left: 60px;
     top: 50px;
-    
+
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
@@ -204,7 +204,7 @@ html {
     line-height: 25px;
     /* or 103% */
     letter-spacing: 0.07em;
-    
+
     color: #FFFFFF;
 }
 
@@ -214,7 +214,7 @@ html {
     height: 25px;
     left: 15px;
     top: 128px;
-    
+
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
@@ -222,7 +222,7 @@ html {
     line-height: 25px;
     /* identical to box height, or 155% */
     letter-spacing: 0.07em;
-    
+
     color: #FFFFFF;
 }
 
@@ -232,7 +232,7 @@ html {
     height: 25px;
     left: 15px;
     top: 197px;
-    
+
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
@@ -240,7 +240,7 @@ html {
     line-height: 25px;
     /* identical to box height, or 155% */
     letter-spacing: 0.07em;
-    
+
     color: #FFFFFF;
 }
 
@@ -250,7 +250,7 @@ html {
     height: 25px;
     left: 15px;
     top: 266px;
-    
+
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
@@ -258,7 +258,7 @@ html {
     line-height: 25px;
     /* identical to box height, or 155% */
     letter-spacing: 0.07em;
-    
+
     color: #FFFFFF;
 }
 
@@ -268,7 +268,7 @@ html {
     height: 25px;
     left: 15px;
     top: 335px;
-    
+
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
@@ -276,7 +276,7 @@ html {
     line-height: 25px;
     /* identical to box height, or 155% */
     letter-spacing: 0.07em;
-    
+
     color: #FFFFFF;
 }
 
@@ -286,7 +286,7 @@ html {
     height: 25px;
     left: 15px;
     top: 404px;
-    
+
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
@@ -294,7 +294,7 @@ html {
     line-height: 25px;
     /* identical to box height, or 155% */
     letter-spacing: 0.07em;
-    
+
     color: #FFFFFF;
 }
 
@@ -444,8 +444,6 @@ html {
     line-height: 25px;
     /* or 103% */
     letter-spacing: 0.07em;
-
-    padding-left: 20px;
     
     color: #FFFFFF;
 
@@ -469,8 +467,6 @@ html {
     line-height: 25px;
     /* or 103% */
     letter-spacing: 0.07em;
-
-    padding-left: 20px;
     
     color: #FFFFFF;
 }
@@ -571,8 +567,160 @@ input::placeholder {
     color: #000000;
 }
 
+.registration-heading {
+    position: absolute;
+    width: 322px;
+    height: 50px;
+    left: 799px;
+    top: 231px;
 
-$primary: #1629b9;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 25px;
+    /* or 52% */
+    letter-spacing: 0.07em;
+
+    color: #FFFFFF;
+
+}
+
+#firstname-input {
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 741px;
+    top: 333px;
+
+    background: #393939;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 124% */
+    letter-spacing: 0.07em;
+
+    color: #FFFFFF;
+}
+
+#lastname-input {
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 743px;
+    top: 423px;
+
+    background: #393939;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 124% */
+    letter-spacing: 0.07em;
+
+    color: #FFFFFF;
+}
+
+#date-input {
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 742px;
+    top: 513px;
+
+    background: #393939;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 124% */
+    letter-spacing: 0.07em;
+
+    padding-left: 31px;
+
+    color: #FFFFFF;
+}
+
+#registration-login-input {
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 742px;
+    top: 603px;
+
+    background: #393939;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 25px;
+    /* or 103% */
+    letter-spacing: 0.07em;
+    
+    color: #FFFFFF;
+}
+
+#registration-password-input {
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 742px;
+    top: 693px;
+
+    background: #393939;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 25px;
+    /* or 103% */
+    letter-spacing: 0.07em;
+    
+    color: #FFFFFF;
+}
+
+.registration-form-button {
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 743px;
+    top: 796px;
+
+    background: #D9D9D9;
+    border-radius: 10px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height, or 124% */
+    letter-spacing: 0.07em;
+
+    color: #000000;
+}
+
+
+// $primary: #1629b9;
 @import "~bootstrap/scss/bootstrap";
 
 

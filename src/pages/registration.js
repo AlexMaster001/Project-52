@@ -6,11 +6,41 @@ import {Seo} from "../components/seo"
 
 const registrationPage = () => (
   <Layout>
-    <div className="container text-center my-5">
-      <h1>Hi from the registration page</h1>
-      <p>Welcome to the registration page</p>
-      <Link to="/">Go back to the homepage</Link>
-    </div>
+    <header id="header-container">
+        <section id="header-background"></section>
+    </header>
+    <section id="registration-form">
+        <div className="registration-heading">Регистрация</div>
+        <form>
+        <input type="text" 
+                id="firstname-input" 
+                name="firstname" 
+                placeholder="Имя" required/>
+        <input type="text" 
+                id="lastname-input" 
+                name="lastname" 
+                placeholder="Фамилия" required/>
+        <input type="date" 
+                id="date-input" 
+                name="date" 
+                />
+        <input type="text" 
+                id="registration-login-input" 
+                name="login" 
+                placeholder="Логин" required/>
+        <input type="password" 
+                id="registration-password-input" 
+                name="password" 
+                placeholder="Пароль" required/>
+            <div class="wrap-entry">
+                <button className="registration-form-button"
+                        type="submit"
+                        onclick="solve()">
+                        Зарегистрироваться
+                </button>
+            </div>
+        </form>
+    </section>
   </Layout>
 )
 
