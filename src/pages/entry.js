@@ -3,6 +3,9 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import {Seo} from "../components/seo"
+import {submit} from "../components/app"
+
+
 
 const entryPage = () => (
   <Layout>
@@ -24,19 +27,18 @@ const entryPage = () => (
     </header>
     <section id="entry-form">
         <div className="entry-heading">Вход</div>
-        <form>
-        <input type="text" 
-                id="login-input" 
-                name="login" 
-                placeholder="Логин" required/>
-        <input type="password" 
-                id="password-input" 
-                name="password" 
-                placeholder="Пароль" required/>
+        <form onSubmit={submit}>
+            <input type="text" 
+                   id="login-input" 
+                   name="login" 
+                   placeholder="Логин" required/>
+            <input type="password" 
+                   id="password-input" 
+                   name="password" 
+                   placeholder="Пароль" required/>
             <div class="wrap-entry">
                 <button className="entry-form-button"
-                        type="submit"
-                        onclick="solve()">
+                        type="submit">
                         Войти
                 </button>
             </div>
@@ -57,6 +59,8 @@ const entryPage = () => (
 )
 
 export default entryPage
+
+
 
 export const Head = () => (
     <Seo title="Entry page" />
