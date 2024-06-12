@@ -860,6 +860,50 @@ input::placeholder {
     padding: 10px; 
 }
 
+.errormessageFirstName {
+    text-align: center;
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 743px;
+    top: 393px;
+    color: red;
+    font-size: 12px;
+}
+
+.errormessageLastName {
+    text-align: center;
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 743px;
+    top: 483px;
+    color: red;
+    font-size: 12px;
+}
+
+.errormessageLogin {
+    text-align: center;
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 743px;
+    top: 663px;
+    color: red;
+    font-size: 12px;
+}
+
+.errormessagePassword {
+    text-align: center;
+    position: absolute;
+    width: 435px;
+    height: 60px;
+    left: 743px;
+    top: 763px;
+    color: red;
+    font-size: 12px;
+}
+
 // $primary: #1629b9;
 @import "~bootstrap/scss/bootstrap";
 
