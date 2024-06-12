@@ -16,7 +16,7 @@ const Navbar = ({ siteTitle }) => {
         to="/"
       >
         <section id="logo-section">
-            <div className="logo-text">Pixe Post</div>
+            <div className="logo-text">Pixel Post</div>
             <div className="logo-text2">все про IT</div>
         </section>
       </ExactNavLink>

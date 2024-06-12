@@ -8,6 +8,22 @@ html {
     background-color: #1E1E1E;
   }
 
+.not-found {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 25px;
+    /* or 103% */
+    letter-spacing: 0.07em;
+
+    color: #FFFFFF;
+}
+
 #site-search {
 
     position: absolute;
@@ -40,18 +56,11 @@ html {
     height: 31.47px;
     top: 73px;
     left: 1310.28px;
-    // gap: 0px;
-    // opacity: 0px;
 
-    // width: 813px;
-    // height: 55px;
-    // left: 1310px;
-    // top: 62px;
     background-image: url("../images/Search-button.png");
     background-size: cover;
 
     border: none;
-    // background: rgba(149, 149, 149, 0.09);
 }
 
 .search-button:hover {
@@ -100,7 +109,6 @@ html {
 }
 
 .registration-background {
-
     position: absolute;
     width: 170px;
     height: 55px;
@@ -109,13 +117,11 @@ html {
 
     background: #3E3159;
     border-radius: 110px;
-
 }
 
 #header-background {
-
     position: absolute;
-    width: 1920px;
+    width: 100%;
     height: 171px;
     left: 0px;
     top: 0px;
@@ -123,7 +129,6 @@ html {
     z-index: -1000;
 
     background: rgba(165, 165, 165, 0.24);
-
 }
 
 #logo-section {
@@ -524,7 +529,6 @@ input::placeholder {
     color: #FFFFFF;
 }
 
-// .entry-form-to-registration-background {
 .entry-form-to-registration-button {
     position: absolute;
     width: 435px;
@@ -719,6 +723,142 @@ input::placeholder {
     color: #000000;
 }
 
+#post {
+    position: absolute;
+    width: 1121px;
+    min-height: 627px;
+    left: 487px;
+    top: 226px;
+
+    padding-bottom: 100px;
+
+    background: #212121;
+
+    border-radius: 26px;
+}
+
+.post-author-background {
+    position: absolute;
+    width: 500px;
+    height: 58px;
+    left: 39px;
+    top: 36px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.post-author {
+    position: absolute;
+    width: 400px;
+    height: 25px;
+    left: 125px;
+    top: 52px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height, or 103% */
+    letter-spacing: 0.07em;
+
+    color: #000000;
+}
+
+.post-text {
+    position: absolute;
+
+    left: 39px;
+    top: 111px;
+}
+
+.post-title {
+
+    padding-top: 111px;
+    padding-left: 39px;
+
+    font-family: 'Gilroy';
+
+    color: #FFFFFF;
+}
+
+.blog-post {
+
+    padding-left: 39px;
+    padding-right: 36px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 124% */
+    letter-spacing: 0.07em;
+
+    color: #FFFFFF;
+}
+
+.post-img {
+
+    float:right;
+    margin: 36px 36px 10px 15px;
+    border-radius: 10px;
+
+}
+
+.comment-button {
+
+    position: absolute;
+    width: 500px;
+    height: 58px;
+
+    left: 583px;
+    bottom: 27px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    display: grid;
+    place-items: center;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    /* identical to box height, or 103% */
+    letter-spacing: 0.07em;
+
+    color: #000000;
+}
+
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    padding: 0;
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
 
 // $primary: #1629b9;
 @import "~bootstrap/scss/bootstrap";
