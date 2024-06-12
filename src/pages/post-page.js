@@ -27,6 +27,7 @@ const postPage = () => (
         </a>
       </div>
       <div hidden className="make-post">
+        
       {/* <div className="make-post"> */}
         <a href="/make-post">
           <div className="make-post-text">Написать</div>

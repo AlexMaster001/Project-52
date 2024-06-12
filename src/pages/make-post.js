@@ -13,6 +13,7 @@ const makePost = () => (
         <section id="header-background"></section>
     </header>
     <section id="entry-form">
+        
         <div className="make-post-heading">Расскажите о главном:</div>
         <form onSubmit={submit}>
             <textarea id="story" name="story" rows="15" cols="120"></textarea>
