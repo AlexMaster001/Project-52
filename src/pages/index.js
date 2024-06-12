@@ -7,56 +7,7 @@ import { Seo } from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    {/* <section className="py-5 text-center container">
-      <div className="row py-lg-5">
-        <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Hello world ! </h1>
-          <p className="lead text-muted"> Welcome to this Boostrap 5 Gatsby Starter</p>
-          <StaticImage
-            src="../images/gatsby-astronaut.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
-
-        </div>
-      </div>
-      <div className="row">
-        <Link to="/about/" className="btn btn-primary my-2">About</Link>
-        <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
-      </div>
-    </section> */}
-
-
-    
-    {/* <section className="py-5 text-center container">
-      <div className="row py-lg-5">
-        <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Hello world ! </h1>
-          <p className="lead text-muted"> Welcome to this Boostrap 5 Gatsby Starter</p>
-          <StaticImage
-            src="../images/gatsby-astronaut.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
-
-        </div>
-      </div>
-      <div className="row">
-        <Link to="/about/" className="btn btn-primary my-2">About</Link>
-        <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
-      </div>
-    </section> */}
     <header id="header-container">
-      {/* <section id="logo-section">
-        <div className="logo-text">Pixel Post</div>
-        <div className="logo-text2">все про IT</div>
-      </section> */}
       <div className="search-input">
         <form>
         <input type="search" id="site-search"/>
@@ -74,7 +25,13 @@ const IndexPage = () => (
           <div className="registration-text">Регистрация</div>
         </a>
       </div>
-      <section className="registration-background"></section>
+      <div hidden className="make-post">
+      {/* <div className="make-post"> */}
+        <a href="./make-post/">
+          <div className="make-post-text">Написать</div>
+        </a>
+      </div>
+      <section className="make-post-background"></section>
     </header>
     <section className="themes-section">
         <div className="themes-title">Темы</div>
