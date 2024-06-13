@@ -1,6 +1,13 @@
+import {  navigate  } from "gatsby"
+
 export const url = 'https://6666fe29a2f8516ff7a5d37c.mockapi.io/api/v1/project52';
 
 
+export const stateVisibility = {
+        value: 'registrtion',
+        name: '',
+        family: ''
+        };
 
 export const submit = (event) => {
     event.preventDefault();
@@ -14,6 +21,11 @@ export const submit = (event) => {
             data.forEach((data) => {
                 if(data.login === formJson.login && data.password === formJson.password){
                 console.log('Access granted');
+                navigate('/');
+                form.reset();
+                stateVisibility.value = 'login';
+                stateVisibility.name = formJson.firstname;
+                stateVisibility.family = formJson.lastname;
                 }
             })
         });
@@ -86,23 +98,5 @@ export async function validateLogin(login) {
 //     })
 // }
 
-//     const test = {
-//         login: 'test',
-//         password: 'test'
-//     }
 
-// const getDate = () => {
-//     fetch(url)
-//     .then(response => response.json())
-//     .then((data) => {
-//         data.forEach((data) => {
-//             if(data.Login === test.login && data.Password === test.password){
-//             console.log('Access granted');
-//             }
-//         })
-//     });
-// }
 
-// getDate();
-// createNewData();
-// deleteData(1);

@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import { Seo } from "../components/seo"
+import { stateVisibility } from "../components/app"
 
 const postPage = () => (
   <Layout>
@@ -89,7 +90,7 @@ const postPage = () => (
                 <form className="comment-form">
                   <div className="form-group">
                     <div for="comment-name">Name:</div>
-                    <input type="name" className="form-control" id="comment-name"  placeholder="Enter your name"/>
+                    <input type="name" className="form-control" id="comment-name"  placeholder='Enter your name'/>
                   </div>
                   <div className="form-group">
                     <div for="comment-body">Comment:</div>
