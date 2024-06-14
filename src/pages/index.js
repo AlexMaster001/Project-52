@@ -4,9 +4,9 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import { Seo } from "../components/seo"
-import { stateVisibility } from "../components/app"
 
 const IndexPage = () => (
+
   <Layout>
     <header id="header-container">
       <div className="search-input">
@@ -16,17 +16,17 @@ const IndexPage = () => (
       </div>
       <button className="search-button">
       </button>
-      <div hidden = {( stateVisibility.value === 'login') ? 'hidden' : '' } className="entry">
+      <div hidden = {( localStorage.getItem('visibylityRegistration') === 'hidden') ? 'hidden' : '' } className="entry">
         <a href="./entry/">
           <div className="entry-text">Войти</div>
         </a>
       </div>
-      <div hidden = {( stateVisibility.value === 'login') ? 'hidden' : '' } className="registration">
+      <div hidden = {( localStorage.getItem('visibylityRegistration') === 'hidden') ? 'hidden' : '' } className="registration">
         <a href="./registration/">
           <div className="registration-text">Регистрация</div>
         </a>
       </div>
-      <div  hidden = {( stateVisibility.value === 'registrtion') ? 'hidden' : '' } className="make-post">
+      <div  hidden = {( localStorage.getItem('visibylityRegistration') !== 'hidden')? 'hidden' : '' } className="make-post">
       {/* <div className="make-post"> */}
         <a href="./make-post/">
           <div className="make-post-text">Написать</div>
