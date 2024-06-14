@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import { Seo } from "../components/seo"
+import { exit } from "../components/app"
 
 const IndexPage = () => (
 
@@ -30,6 +31,16 @@ const IndexPage = () => (
       {/* <div className="make-post"> */}
         <a href="./make-post/">
           <div className="make-post-text">Написать</div>
+        </a>
+      </div>
+      <div  hidden = {( localStorage.getItem('visibylityRegistration') !== 'hidden')? 'hidden' : '' } className="exit" onClick={exit}>
+        <a>
+          <div className="exit-text">Выход</div>
+        </a>
+      </div>
+      <div  hidden = {( localStorage.getItem('visibylityRegistration') !== 'hidden')? 'hidden' : '' } className="firstname-lastname">
+        <a>
+          <div className="firstname-lastname-text">{`${localStorage.getItem('firstname')} ${localStorage.getItem('lastname')}`}</div>
         </a>
       </div>
       <section className="make-post-background"></section>

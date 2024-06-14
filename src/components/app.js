@@ -17,12 +17,19 @@ export const submit = (event) => {
                 navigate('/');
                 form.reset();
                 localStorage.setItem('visibylityRegistration', 'hidden')
+                localStorage.setItem('firstname', data.firstname)
+                localStorage.setItem('lastname', data.lastname)
                 }
             })
         });
 }
 
-
+export const exit = () => {
+        localStorage.setItem('visibylityRegistration', '')
+        localStorage.setItem('firstname', '')
+        localStorage.setItem('lastname', '')
+        navigate('/');
+}
 
 export const registrate = (registrationData) => {
     fetch(url, {
